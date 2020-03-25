@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    color: inherit;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+button:focus {
+    outline: none;
+}
+body {
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: 'Comfortaa';
+}
+main {
+    display: grid;
+    width: 400px;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+}
+#display {
+    grid-column: 1/5;
+    border-bottom: 1px solid white;
+}
+main * {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+}
+.number {
+    border-radius: 50%;
+}
+.action {
+    color: orangered;
+    font-weight: bold;
+    border-radius: 50%;
+}
+#equals {
+    background-color: orangered;
+    color: white;
+}
+.action:hover, .number:hover {
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+#equals:hover {
+    background-color: black;
+    color: orangered;
+}
+#display {
+    text-align: right;
+    align-items: end;
+    padding: 15px;
+}
